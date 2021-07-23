@@ -43,9 +43,10 @@ section
 }
 .banner .shanImg
 {
-    border:#31d3c8 solid 10px;
-    overflow:auto;
-    max-width:30%;
+    border: #fff solid 10px;
+    border-bottom:#fff solid 80px;
+    max-width:50%;
+    transform: rotate(-4deg);
 }
 .btn
 {
@@ -137,7 +138,7 @@ header.sticky ul li a
 .content .w50 img
 {
     border: #fff solid 17px;
-    transform: rotate(6deg);
+    transform: rotate(-7deg);
 }
 .contentBx
 {
@@ -500,5 +501,62 @@ color:#999;
     header.sticky ul li a
     {
         color: #EEE;
+    }
+    section
+    {
+        padding:100px 50px;
+    }
+    .banner
+    {
+        padding: 150px 50px 100px;
+    }
+    .banner h2
+    {
+        font-size:1.5em;
+    }
+    .banner h3
+    {
+        font-size:1em;
+    }
+    .btn
+    {
+        margin-top:10px;
+        padding:10px 20px;
+        font-size:16px;
+    }
+    .heading h2
+    {
+        font-size:24px;
+    }
+    .contentBx h3 
+    {
+        font-size:20px;
+    }
+    .content 
+    {
+        flex-direction:column-reverse;
+    }
+    .w50
+    {
+        margin-bottom:20px; 
+    }
+    .content .w50 img
+    {
+        border: #fff solid 10px;
+        margin-left:100px;
+        transform: rotate(6deg);
+        display:flex;
+        position:relative;
+    }
+    .banner 
+    {
+        flex-direction:column;
+    }
+    .banner .shanImg
+    {
+        border: #fff solid 5px;
+        border-bottom:#fff solid 30px;
+        transform: rotate(-6deg);
+        
     }
 }
