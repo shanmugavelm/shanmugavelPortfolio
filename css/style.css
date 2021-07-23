@@ -5,6 +5,7 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 section 
 {
@@ -90,7 +91,7 @@ header .logo
 }
 header.sticky .logo
 {
-  color: #31d3c8  
+  color: #31d3c8; 
 }
 header ul
 {
@@ -343,4 +344,153 @@ transform: translateZ(55px);
 .certificateBx h3
 {
 transform: translateZ(48px);
+}
+.contact
+{
+    background:#111;
+}
+.formBx
+{
+    min-width:60%;
+}
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 20px;
+    padding:15px;
+    font-size:16px;
+    border:none;
+    outline:none;
+    background:#222;
+    color:#fff;    
+}
+.formBx form textarea
+{
+    min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder
+{
+color:#999;
+}
+.formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #31d3c8;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo
+{
+    min-width: 40%;
+}
+.contactInfoBx
+{
+    position: relative;
+}
+.contactInfoBx .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon
+{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 24px;
+}
+.contactInfoBx .box .text
+{
+    margin-left:20px;
+    font-size:16px;
+    color:#fff;
+    flex-flow: column;
+    flex-direction: row;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3
+{
+    font-weight:500;
+    color:#31d3c8;
+}
+.copyright
+{
+    background: #000;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+}
+
+/* Responsive */
+@media(max-width:991px)
+{
+    header,
+    header.sticky
+    {
+        padding:20px 50px;
+        z-index:1000;
+    }
+    .menu
+    {
+        position:fixed;
+        top:75px;
+        left:-900%;
+        display:block;
+        padding:100px 50px;
+        text-align: center;
+        width:100%;
+        height:100vh;
+        background: #111;
+        transition:0.5s;
+        z-index: 999;
+        border-top:1px solid rgba(0,0,0,0.2);
+        opacity: 84%;
+
+    }
+    .menu.active
+    {
+        left:0;
+    }
+    header ul li a 
+    {
+        color:#EEE;
+        font-size:20px;
+        margin:10px;
+        background: #31d3c8;
+        padding:5px;
+        border-radius: 8px;
+        
+    }
+    .toggle
+    {
+        width:40px;
+        height:40px;
+        background:url(../image/logo/menu3.png);
+        background-position:center;
+        background-repeat:no-repeat;
+        background: size 30px;
+        cursor:pointer;
+    }
+    header.sticky ul li a
+    {
+        color: #EEE;
+    }
 }

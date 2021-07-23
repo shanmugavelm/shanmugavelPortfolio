@@ -4,26 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title> Shanmugavel Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="sticky">
-        <a href="#" class="logo">Shanmugavel</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Certifications</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+        <a href="#home" class="logo">Shanmugavel</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certificate">Certifications</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="textBx">
             <h2>#Hello World.<br/> I'm <br><span>Shanmugavel.</span></h2> 
             <h3>Technical Leader. Full Stack Developer</h3>
-            <a href="#" class="btn">Know More</a>
+            <a href="#about" class="btn">Know More</a>
             <a href="./doc/Shanmugavel_Resume.pdf" class="btn" title="Shanmugavel Resume" target="_blank">Resume</a>            
             </div>
             <div class="shanImg">
@@ -31,7 +32,7 @@
             </div>
     
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="heading">
             <h2>About Me</h2>
         </div>
@@ -54,7 +55,7 @@
         </div>
     </section>
 
-    <section class="certificate">
+    <section class="certificate" id="certificate">
         <div class="heading white">
             <h2>Certifications</h2>
         </div>
@@ -89,11 +90,7 @@
         </div>
     </section>
 
-
-    
-
-
-    <section class="skill">
+    <section class="skill" id="skill">
         <div class="heading">
             <h2>SkillSet</h2>
         </div>
@@ -152,7 +149,7 @@
         </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="heading white">
             <h2>Work Experience</h2>
         </div>
@@ -180,6 +177,65 @@
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>No.26, Kavery Nagar,<br/> Pondy Main Road, <br/>Villianur, <br/>Puducherry, <br/>India - 605 110.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+
+                        </div>
+                        <div class="text">
+                            <h3>Mobile</h3>
+                            <p>+91 9894695362</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>E-Mail</h3>
+                            <p>m.shanmugavel@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>LinkedIn</h3>
+                            <p>https://www.linkedin.com/in/shanmugavelm/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &#169; 2021 Shanmugavel. All Right Reserved.</p>
+    </div>
+
     <script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./js/animate-element.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
