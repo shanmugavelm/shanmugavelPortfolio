@@ -221,6 +221,11 @@ img
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
+.skill
+{
+    background: url(../image/bg/about2.jpg);
+    background-size: cover;
+}
 .skill .content
 {
     
