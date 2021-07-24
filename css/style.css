@@ -168,6 +168,11 @@ img
     background: url(../image/bg/about2.jpg);
     background-size: cover;
 }
+.about .hello {
+    background:#31d3c8;
+    color:#fff;
+    padding:10px;
+}
 .work
 {
     background: url(../image/bg/work2.jpg);
@@ -386,7 +391,6 @@ color:#999;
     justify-content: center;
     
 }
-
 .skills .content .skillsBx
 {
     padding:40px 20px;
