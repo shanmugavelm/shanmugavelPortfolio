@@ -148,16 +148,12 @@ header.sticky ul li a
 .contentBx
 {
     padding-right: 50px;
-    width:70%;
+    width:90%;
 }
 .contentBx h3
 {
  font-size: 24px;
  margin-bottom: 10px;
-}
-.w50
-{
-    min-width: 65%;
 }
 img
 {
@@ -451,7 +447,7 @@ color:#999;
     .menu
     {
         position:fixed;
-        top:75px;
+        top:55px;
         left:-900%;
         display:block;
         padding:100px 50px;
@@ -550,12 +546,19 @@ color:#999;
     {
         flex-direction:column;
     }
-    .banner .shanImg
+    .banner .shanImg {
+        border: #fff solid 15px;
+        border-bottom: #fff solid 40px;
+        transform: rotate(-8deg);
+        min-width: 75%;
+    }
+
+    .contentBx {
+        padding-right: 2px;
+        width: 100%;
+    }
+    section .textBx
     {
-        border: #fff solid 8px;
-        border-bottom:#fff solid 16px;
-        transform: rotate(0deg);
-        min-width: 35%;
-        
+        padding-bottom:50px;
     }
 }
