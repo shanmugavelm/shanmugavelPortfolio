@@ -21,7 +21,6 @@ section
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .banner h2
 {
@@ -45,8 +44,9 @@ section
 {
     border: #fff solid 10px;
     border-bottom:#fff solid 80px;
-    max-width:50%;
+    max-width:40%;
     transform: rotate(0deg);
+    margin-top:100px;
 }
 .btn
 {
@@ -138,6 +138,12 @@ header.sticky ul li a
 .about .content {
     display: flex;
     justify-content: right;
+}
+.about .shanname
+{
+    font-family: 'Poppins', sans-serif;
+    color:#31d3c8;
+    font-size: 1.4em;
 }
 .about .content img 
 {
