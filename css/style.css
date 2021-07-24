@@ -268,15 +268,12 @@ img
     border: solid #fff;
     display: flex;
     align-items: center;
-    border: 0.5px solid #E0E0E0;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
     margin: 10px;
     background: #EEE;
 }
 .skillcnt ul li .eachskill:hover{
     background:#a7a8a8;
-    border: none;
+    opacity: 50%;
 }
 .skillcnt .eachskill h5
 {
@@ -444,6 +441,72 @@ color:#999;
     text-align:center;
     padding:10px;
 }
+
+
+
+
+.skills
+{
+    background: url(../image/bg/about2.jpg);
+    background-size: cover;
+}
+.skills .content
+{
+    
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.skills .content .skillsBx
+{
+    padding:40px 20px;
+    box-shadow: 0 5px 20px rgba(0.9, 0.4, 0.4, 0.4);
+    color:#111;
+    margin: 20px;
+    text-align:center;
+    transition:0.5s;
+    border-radius: 30px;
+}
+.skills .content .skillsBx:hover
+{
+    background: rgb(223, 223, 223);
+}
+.eachskills
+{
+    position: relative;
+}
+.eachskills img
+{
+    width:60px;    
+}
+.skillscnt
+{
+    
+    padding:15px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    margin: 10px;
+    background: #31d3c8;
+    border:#fff solid 1px;
+    border-radius:10px;
+}
+
+
+.skillscnt .eachskills
+{
+    align-items: stretch;
+    margin: 10px;
+}
+
+.skillscnt .eachskills img
+{
+    border:rgb(223, 221, 221) solid 2px;
+    border-radius:4px;
+}
+
+
+
 
 /* Responsive */
 @media(max-width:991px)
